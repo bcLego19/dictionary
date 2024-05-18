@@ -6,7 +6,8 @@
     </head>
     <body>
         <h1>Dictionary</h1>
-        <input type="text" id="wordInput">  <button onclick="fetchDefinition()">Search</button>
+        <input type="text" id="wordInput" onkeyup="if (event.keyCode === 13) { fetchDefinition(); }">
+        <button onclick="fetchDefinition()">Search</button>
         <p id="searchResult"></p>
         <script src="script.js"></script>
     </body>
